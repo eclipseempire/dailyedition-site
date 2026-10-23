@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · The Daily Edition</title>
+<meta name="description" content="How The Daily Edition handles your data: no account, no analytics, nothing collected by the developer.">
+<!-- Source of truth: docs/PRIVACY.md in the app's repository. Keep the two in step. -->
+<style>
+  :root {
+    --paper: #F6F1E7; --ink: #1F1E1C; --secondary: #45413B; --rule: #BFB6A3; --accent: #8A1C1C; --surface: #EDE5D4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #161513; --ink: #EAE5D9; --secondary: #C4BEB2; --rule: #45423B; --accent: #E89A7E; --surface: #22211E; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 18px/1.6 Georgia, "Iowan Old Style", "Times New Roman", serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+  .masthead {
+    font-family: Didot, "Bodoni 72", Georgia, serif; font-weight: 700; font-size: clamp(2rem, 7vw, 3rem);
+    text-align: center; margin: 0; line-height: 1.1;
+  }
+  .rules { border-top: 4px solid var(--ink); border-bottom: 1px solid var(--ink); height: 7px; margin: .75rem 0 1.5rem; }
+  h1 { font-size: 1.6rem; margin: 0 0 .25rem; }
+  .updated { color: var(--secondary); margin: 0 0 2rem; font-style: italic; }
+  h2 {
+    font: 700 .85rem/1.3 -apple-system, "Helvetica Neue", Arial, sans-serif; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--accent); margin: 2.25rem 0 .5rem; padding-top: .75rem; border-top: 1px solid var(--rule);
+  }
+  p, li { margin: 0 0 .9rem; }
+  ul { padding-left: 1.25rem; }
+  .lead { font-size: 1.15rem; }
+  .services { margin: 0; padding: 0; list-style: none; }
+  .services li { background: var(--surface); padding: .9rem 1rem; margin-bottom: .75rem; border-left: 3px solid var(--accent); }
+  .services strong { display: block; }
+  .when { display: block; color: var(--secondary); font-size: .95rem; margin-bottom: .25rem; }
+  a { color: var(--accent); }
+  footer { color: var(--secondary); font-size: .9rem; margin-top: 3rem; border-top: 1px solid var(--rule); padding-top: 1rem; }
+</style>
+</head>
+<body>
+<main>
+  <p class="masthead">The Daily Edition</p>
+  <div class="rules" aria-hidden="true"></div>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated 23 October 2026</p>
+
+  <p class="lead">The Daily Edition makes a daily newspaper from sources you choose. It has no account, no server of its own, no analytics and no advertising. The developer receives nothing about you or what you read.</p>
+
+  <h2>What stays on your device</h2>
+  <ul>
+    <li>Your sources, folders, interests, sections and settings.</li>
+    <li>Downloaded articles, images, summaries and editions.</li>
+    <li>Saved stories, reading progress and what you’ve read.</li>
+    <li>The city or region you type for local news. The app never asks for your location.</li>
+    <li>A Claude API key, if you add one. It’s stored in the iOS Keychain on your device and sent only to Anthropic, with the requests you choose to make.</li>
+  </ul>
+  <p>If you turn on <strong>iCloud Sync</strong> (where available; off unless you choose it), your list of sources, with their folders, sections and settings, and your list of sections are also kept in your private iCloud storage so your other devices can use them. It’s stored encrypted in your iCloud account under Apple’s iCloud terms, and the developer can’t access it. Articles, editions and reading history never sync. Settings › iCloud Sync can delete the synced copy.</p>
+  <p>Deleting the app deletes all of it. Settings › Storage can clear downloaded content at any time, and old editions are removed automatically after the period you choose (two months unless you change it). Saved stories are kept.</p>
+
+  <h2>Who the app contacts, and why</h2>
+  <p>The app connects to other services only to do what you’ve asked:</p>
+  <ul class="services">
+    <li><strong>The websites, feeds, newsletters, YouTube channels and subreddits you follow</strong>
+      <span class="when">When refreshing your sources</span>
+      An ordinary web request, as a browser or feed reader would make, identifying the app as “DailyEdition”. Like any website, they see your IP address.</li>
+    <li><strong>Publishers’ article pages</strong>
+      <span class="when">Only when Download Full Articles is on and a feed has just an excerpt</span>
+      The same ordinary request for that page.</li>
+    <li><strong>Apple Private Cloud Compute</strong>
+      <span class="when">Only if you choose it for AI processing</span>
+      The text of the articles being summarized and your list of topics. Apple states that this data isn’t stored or made accessible to Apple.</li>
+    <li><strong>Apple iCloud (your private database)</strong>
+      <span class="when">Only if you turn on iCloud Sync</span>
+      Your sources (addresses, names and settings), folders and section list, encrypted, in your own iCloud account.</li>
+    <li><strong>Anthropic (Claude)</strong>
+      <span class="when">Only if you choose it and add your own API key</span>
+      The text of the articles being summarized and your list of topics, sent under your own Anthropic account and subject to Anthropic’s terms for that account.</li>
+  </ul>
+  <p>With <strong>On-Device Only</strong> (the default) or <strong>No AI</strong>, summaries are written on your device or not at all, and no article text goes to a cloud service. The app never switches to a cloud service on its own. Every summary says how it was made.</p>
+
+  <h2>What the developer collects</h2>
+  <p>Nothing. The app has no analytics, crash-reporting or advertising SDKs, and its diagnostics (Settings › About &amp; Diagnostics) are shown only on your device. If you share crash reports with developers through iOS’s own setting, Apple delivers them under Apple’s privacy policy.</p>
+
+  <h2>Children</h2>
+  <p>The app isn’t directed at children and collects no data from anyone.</p>
+
+  <h2>Changes and contact</h2>
+  <p>Changes to this policy will be noted in the app’s release notes and on this page.</p>
+  <p>Questions about privacy: <a href="mailto:eclipseempire@gmail.com">eclipseempire@gmail.com</a></p>
+
+  <footer>The Daily Edition · This page uses no cookies, scripts or trackers.</footer>
+</main>
+</body>
+</html>
